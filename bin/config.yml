@@ -1,0 +1,15 @@
+# SimpleChat Configuration
+
+# The format of chat messages
+chat-format: "<prefix>&r <nickname> &6>>&r <message>"
+
+# Tab enabled?
+tab-enabled: true
+
+# Optional top tab line
+tab-header: "&aWelcome to the server <name>"
+
+# Optional bottom tab line
+tab-footer: "&7Enjoy your stay!\nTPS: <tps>\nPing: <ping>"
+
+nickname-save-interval-seconds: 300

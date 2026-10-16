@@ -1,0 +1,55 @@
+name: SimpleChat
+version: 1.0.1
+main: cloud.mineplay.simplechat.SimpleChat
+author: RyTheFirst
+api-version: 1.20
+
+commands:
+  m:
+    description: Send a private message to a player
+    usage: /m <player> <message>
+  r:
+    description: Reply to the last person who messaged you
+    usage: /r <message>
+  nick:
+    description: Set or reset your nickname (or another's if permitted)
+    aliases: [nickname]
+    usage: /nick <nickname> | /nick clear [player] | /nick <player> <nickname>
+  realname:
+    description: View the real name of a nicked player
+    usage: /realname <nickname or player>
+  simplechat:
+    description: Reload the SimpleChat plugin
+    usage: /simplechat reload
+  lockdown:
+    description: Lock or unlock the chat
+    usage: /lockdown [staff]
+
+permissions:
+  simplechat.lockdown:
+    description: Allows the use of /lockdown
+    default: op
+  simplechat.lockdown.bypass:
+    description: Allows a player to bypass chat lockdowns
+    default: false
+  simplechat.staff:
+    description: Allows a player to speak during a staff-only lockdown
+    default: false
+  simplechat.nick:
+    description: Allows a player to set or clear their own nickname
+    default: true
+  simplechat.nick.others:
+    description: Allows a player to set or clear others' nicknames
+    default: op
+  simplechat.realname:
+    description: Allows a player to see real names from nicknames
+    default: true
+  simplechat.reload:
+    description: Allows reloading of the plugin with /simplechat reload
+    default: op
+  simplechat.color.nickname:
+    description: Allows using color codes in nicknames
+    default: true
+  simplechat.color.message:
+    description: Allows using color codes in messages
+    default: true
